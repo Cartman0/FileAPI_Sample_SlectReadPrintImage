@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>FileAPI で画像を選択またはドラッグ&ドロップし、表示</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>FileAPI で画像を選択またはドラッグ&ドロップし、表示</h1>
+    <p>画像を選択！</p>
+    <input type="file" id="file-image" accept="image/*">
+    <p>or</p>
+    <div id="drop-zone">ここにドロップ！</div>
+    <div id="print_img">
+      <p id="width-height">width: height: </p>
+      <p>↓以下に画像を表示</p>
+      <img id="image" alt="">
+      <p>↓以下にdataURLを表示</p>
+      <textarea name="name" id="print_DataURL" readonly></textarea>
+    </div>
+
+  <script src="read_img.js"></script>
+  </body>
+</html>
